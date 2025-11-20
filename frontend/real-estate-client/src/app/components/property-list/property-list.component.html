@@ -1,0 +1,40 @@
+<div class="filters">
+  <input
+    type="text"
+    placeholder="Search properties..."
+    [(ngModel)]="searchTerm"
+    (input)="onFilterChange()"
+  />
+
+  <label>
+    <input
+      type="checkbox"
+      [(ngModel)]="onlyAvailable"
+      (change)="onFilterChange()"
+    />
+    Only available
+  </label>
+
+  <label>
+    <input
+      type="checkbox"
+      [(ngModel)]="sortDescending"
+      (change)="onFilterChange()"
+    />
+    Sort by price (descending)
+  </label>
+</div>
+
+<div class="property-list">
+  <div class="property-card" *ngFor="let p of properties">
+    <img [src]="p.imageUrl" alt="Property image" />
+    <div class="details">
+      <h3>{{ p.address }}</h3>
+      <p class="price">₪{{ p.pricePerNight }} per night</p>
+      <p class="desc">{{ p.description }}</p>
+      <p class="status" [class.unavailable]="!p.isAvailable">
+        {{ p.isAvailable ? 'Available' : 'Unavailable' }}
+      </p>
+    </div>
+  </div>
+</div>
