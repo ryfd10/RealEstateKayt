@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "address": "HaYarkon 99, Tel Aviv",
+    "pricePerNight": 620,
+    "isAvailable": true,
+    "imageUrl": "https://example.com/images/property1.jpg",
+    "description": "Spacious 2BR apartment near the beach with balcony and sea view."
+  },
+  {
+    "id": 2,
+    "address": "King George 17, Jerusalem",
+    "pricePerNight": 480,
+    "isAvailable": false,
+    "imageUrl": "https://example.com/images/property2.jpg",
+    "description": "Central apartment with kosher kitchen and walking distance to Old City."
+  }
+]
