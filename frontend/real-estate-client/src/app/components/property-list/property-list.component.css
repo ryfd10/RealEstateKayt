@@ -1,0 +1,61 @@
+.filters {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.filters input[type="text"] {
+  padding: 0.5rem;
+  width: 250px;
+}
+
+.property-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.property-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.property-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.details {
+  padding: 1rem;
+}
+
+.details h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.status {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: green;
+}
+
+.status.unavailable {
+  color: red;
+}
